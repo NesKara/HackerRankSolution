@@ -12,10 +12,10 @@ public class JavaSubstringComparisons {
         // 'largest' must be the lexicographically largest substring of length 'k'
 
         ArrayList<String> wordList=new ArrayList<String>();
-        String [] list=new String[];
+        String [] list=new String[10];
         for (int start=0;start<s.length()-2;start++)
         {
-            list[start]=s.substring((start,start+3));
+            list[start]=s.substring(start,start+3);
         }
         Collections.sort(wordList);
        smallest=wordList.get(0);
